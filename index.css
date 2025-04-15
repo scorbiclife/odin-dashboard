@@ -4,6 +4,42 @@
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
+}
+
+/** css variables */
+
+:root {
+  --gap-normal: 12px;
+}
+
+/** main layout */
+
+.main-container {
+  height: 100vh;
+
+  display: grid;
+  grid: 1fr / 240px 1fr;
+}
+
+.main-content {
+  overflow: scroll;
+}
+
+/** sidebar layout */
+
+.main-sidebar {
+  display: grid;
+  grid: repeat(3, auto);
+  gap: 24px;
+
+  padding: var(--gap-normal);
+}
+
+/** main content layout */
+
+.content-container {
+
 }
