@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard | Odin Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="main-container">
@@ -28,83 +33,95 @@
       </nav>
     </div>
 
-    <div class="main-content">
-      <header>
-        <div>Morgan Oakley</div>
-        <div>
-          Hi there,
-          <div>Morgan Oakley (@morgan)</div>
+    <div class="main-content content-container">
+      <header class="content-header">
+        <div class="navigation_bar">
+          <div>Morgan Oakley</div>
         </div>
+        <div class="profile_banner">
+          <div></div>
 
-        <form action="#" method="POST">
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
-        </form>
+          <div>
+            Hi there,
+            <div>Morgan Oakley (@morgan)</div>
+          </div>
+
+          <div></div>
+
+          <form action="#" method="POST" class="profile_banner-controls">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </form>
+        </div>
       </header>
 
-      <main>
-        <div>
+      <main class="content-body">
+        <div class="content-main_pane">
           <h2>Your Projects</h2>
-          <div>
-            <h3>Super Cool Project</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              distinctio odio deserunt aliquam, at dignissimos ipsam sequi
-              inventore nisi, praesentium ullam recusandae exercitationem
-              voluptate dolore? Incidunt tempore modi culpa quo!
-            </p>
-          </div>
-          <div>
-            <h3>Impossible App</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              nobis ad quod dolores eum, maxime, officia neque ex ab natus animi
-              asperiores? Nulla eligendi aperiam illum incidunt sint ea tempore?
-            </p>
-          </div>
-          <div>
-            <h3>Ad Blocker</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              cupiditate facere a sapiente beatae. Cupiditate, ducimus nemo
-              voluptate eos alias adipisci explicabo labore, tenetur maiores sed
-              consequatur cum error eaque.
-            </p>
-          </div>
-          <div>
-            <h3>Less cool project</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              natus placeat maiores nostrum mollitia harum tenetur soluta
-              tempora doloremque a, facere tempore deleniti. Provident nam
-              similique nulla illum aliquid officiis!
-            </p>
-          </div>
-          <div>
-            <h3>Easy Peasy App</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Nesciunt, illum non quisquam eaque doloremque suscipit facilis
-              doloribus, provident ducimus commodi possimus asperiores, esse
-              mollitia vitae ab. Nobis blanditiis perferendis adipisci!
-            </p>
-          </div>
-          <div>
-            <h3>Money Maker</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-              nostrum architecto animi inventore corporis sint voluptatibus
-              deserunt facere similique nam, nisi at hic tempore harum facilis
-              eveniet modi. Fugit, ab.
-            </p>
-          </div>
+
+          <ul class="cards">
+            <li>
+              <h3>Super Cool Project</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+                distinctio odio deserunt aliquam, at dignissimos ipsam sequi
+                inventore nisi, praesentium ullam recusandae exercitationem
+                voluptate dolore? Incidunt tempore modi culpa quo!
+              </p>
+            </li>
+            <li>
+              <h3>Impossible App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo nobis ad quod dolores eum, maxime, officia neque ex ab
+                natus animi asperiores? Nulla eligendi aperiam illum incidunt
+                sint ea tempore?
+              </p>
+            </li>
+            <li>
+              <h3>Ad Blocker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                cupiditate facere a sapiente beatae. Cupiditate, ducimus nemo
+                voluptate eos alias adipisci explicabo labore, tenetur maiores
+                sed consequatur cum error eaque.
+              </p>
+            </li>
+            <li>
+              <h3>Less cool project</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis natus placeat maiores nostrum mollitia harum tenetur
+                soluta tempora doloremque a, facere tempore deleniti. Provident
+                nam similique nulla illum aliquid officiis!
+              </p>
+            </li>
+            <li>
+              <h3>Easy Peasy App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nesciunt, illum non quisquam eaque doloremque suscipit facilis
+                doloribus, provident ducimus commodi possimus asperiores, esse
+                mollitia vitae ab. Nobis blanditiis perferendis adipisci!
+              </p>
+            </li>
+            <li>
+              <h3>Money Maker</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquid nostrum architecto animi inventore corporis sint
+                voluptatibus deserunt facere similique nam, nisi at hic tempore
+                harum facilis eveniet modi. Fugit, ab.
+              </p>
+            </li>
+          </ul>
         </div>
 
-        <div>
+        <div class="content-side_pane">
           <h2>Announcements</h2>
-          <div>
-            <div>
+          <ul class="card">
+            <li>
               <h3>Site Maintenance</h3>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
@@ -112,8 +129,8 @@
                 corrupti accusamus ea itaque dicta tempore cumque eveniet,
                 reprehenderit incidunt nam sit amet.
               </p>
-            </div>
-            <div>
+            </li>
+            <li>
               <h3>Community Share Day</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt
@@ -121,8 +138,8 @@
                 tenetur non voluptatem exercitationem maiores voluptate dolor
                 laborum vero?
               </p>
-            </div>
-            <div>
+            </li>
+            <li>
               <h3>Updated Privacy Policy</h3>
               <p>
                 Sapiente recusandae, quasi voluptates laboriosam ab facere iure
@@ -130,27 +147,29 @@
                 tempora, distinctio dolorum totam ex nisi possimus ad minima
                 expedita molestiae labore fugiat nemo. Excepturi, quam.
               </p>
-            </div>
-          </div>
-        </div>
+            </li>
+          </ul>
 
-        <div>
-          <h2>Trending</h2>
-          <div>
-            <div>@tegan</div>
-            <div>World Peace Builder</div>
-          </div>
-          <div>
-            <div>@morgan</div>
-            <div>Super Cool Project</div>
-          </div>
-          <div>
-            <div>@kendall</div>
-            <div>Life Changing App</div>
-          </div>
-          <div>
-            <div>@alex</div>
-            <div>No Traffic Maker</div>
+          <div class="card">
+            <h2>Trending</h2>
+            <ul>
+              <li>
+                <div>@tegan</div>
+                <div>World Peace Builder</div>
+              </li>
+              <li>
+                <div>@morgan</div>
+                <div>Super Cool Project</div>
+              </li>
+              <li>
+                <div>@kendall</div>
+                <div>Life Changing App</div>
+              </li>
+              <li>
+                <div>@alex</div>
+                <div>No Traffic Maker</div>
+              </li>
+            </ul>
           </div>
         </div>
       </main>

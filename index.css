@@ -9,6 +9,11 @@ ol {
   list-style: none;
 }
 
+body,
+button {
+  font-family: "Roboto";
+}
+
 /** css variables */
 
 :root {
