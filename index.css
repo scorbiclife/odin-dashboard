@@ -28,17 +28,23 @@ button {
   grid: 100vh / 240px 1fr;
 }
 
-/** sidebar layout */
+/** sidebar layout and styling */
 
 .main-sidebar {
   display: grid;
-  grid: auto auto 1fr / 100%;
+  grid: auto auto auto 1fr / 100%;
   gap: var(--gap-large);
 
   padding: var(--gap-normal);
 
   color: white;
   background-color: rgb(25, 126, 201);
+}
+
+.nav-list {
+  display: grid;
+  padding: var(--gap-normal);
+  gap: var(--gap-normal);
 }
 
 /** main content layout */
