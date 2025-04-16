@@ -13,19 +13,14 @@ ol {
 
 :root {
   --gap-normal: 12px;
+  --gap-large: 24px;
 }
 
 /** main layout */
 
 .main-container {
-  height: 100vh;
-
   display: grid;
-  grid: 1fr / 240px 1fr;
-}
-
-.main-content {
-  overflow: scroll;
+  grid: 100vh / 240px 1fr;
 }
 
 /** sidebar layout */
@@ -33,7 +28,7 @@ ol {
 .main-sidebar {
   display: grid;
   grid: repeat(3, auto);
-  gap: 24px;
+  gap: var(--gap-large);
 
   padding: var(--gap-normal);
 }
@@ -41,5 +36,65 @@ ol {
 /** main content layout */
 
 .content-container {
+  height: 100vh;
+  overflow: hidden;
 
+  display: grid;
+  grid: auto minmax(0, 1fr) / 1fr;
+}
+
+.content-header {
+  display: grid;
+  gap: var(--gap-normal);
+  padding: var(--gap-normal) var(--gap-large);
+}
+
+.content-body {
+}
+
+/** header layout */
+
+.navigation_bar {
+}
+
+.profile_banner {
+  display: grid;
+  grid: 1fr / auto auto 1fr auto;
+  padding-inline: var(--gap-normal);
+}
+
+.profile_banner-controls {
+  display: grid;
+  grid: 1fr / 1fr 1fr 1fr;
+  align-items: center;
+  gap: var(--gap-normal);
+}
+
+/** main body layout */
+
+.content-body {
+  height: 100%;
+  display: grid;
+  grid: minmax(0, 1fr) / 1fr 240px;
+}
+
+.content-main_pane {
+  overflow: scroll;
+}
+
+.cards {
+  display: grid;
+  grid: repeat(3, 240px) / repeat(2, 360px);
+  gap: var(--gap-normal);
+}
+
+.content-side_pane {
+  display: grid;
+  gap: var(--gap-normal);
+
+  grid: auto 1fr 1fr / 1fr;
+}
+
+.card {
+  overflow: scroll;
 }
