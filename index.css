@@ -36,6 +36,9 @@ button {
   gap: var(--gap-large);
 
   padding: var(--gap-normal);
+
+  color: white;
+  background-color: rgb(25, 126, 201);
 }
 
 /** main content layout */
