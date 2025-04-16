@@ -32,7 +32,7 @@ button {
 
 .main-sidebar {
   display: grid;
-  grid: repeat(3, auto);
+  grid: auto auto 1fr / 100%;
   gap: var(--gap-large);
 
   padding: var(--gap-normal);
