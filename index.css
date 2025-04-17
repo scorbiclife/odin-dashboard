@@ -216,8 +216,14 @@ body {
 
 .profile_banner {
   display: grid;
-  grid: 1fr / auto auto 1fr auto;
+  grid-auto-flow: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.profile_banner-welcome {
+  display: grid;
+  grid-auto-flow: column;
   gap: var(--gap-normal);
 }
 
