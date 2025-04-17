@@ -14,6 +14,18 @@ button {
   font-family: "Roboto";
 }
 
+h1 {
+  font-size: var(--font-large);
+}
+
+h2 {
+  font-size: var(--font-half-large);
+}
+
+h3, h4, h5, h6 {
+  font-size: var(--font-medium);
+}
+
 /** css variables */
 
 :root {
@@ -22,6 +34,7 @@ button {
 
   --font-small: 0.75rem;
   --font-medium: 1rem;
+  --font-half-large: 1.25rem;
   --font-large: 1.5rem;
 
   --font-weight-light: 300;
@@ -29,7 +42,12 @@ button {
   --font-weight-heavy: 900;
 
   --color-primary: rgb(25, 126, 201);
+  --color-secondary: rgb(234, 167, 32);
+  --color-background: rgb(219, 226, 236);
   --color-shadow: rgba(0, 0, 0, 0.6);
+  --color-gray: gray;
+
+  --border-radius-medium: 8px;
 }
 
 body {
@@ -40,6 +58,17 @@ body {
 
 .card {
   overflow: scroll;
+
+  padding: 2rem;
+  background-color: white;
+  border: none;
+  border-radius: var(--border-radius-medium);
+  -webkit-box-shadow: 0px 2px 2px 0px var(--color-shadow);
+  box-shadow: 0px 2px 2px 0px var(--color-shadow);
+}
+
+.card--fancy {
+  border-left: 8px solid var(--color-secondary);
 }
 
 .icon-and-text,
@@ -103,6 +132,10 @@ body {
 
 .font-weight-heavy {
   font-weight: var(--font-weight-heavy);
+}
+
+.text-light {
+  color: var(--color-gray);
 }
 
 /** main layout */
@@ -191,12 +224,14 @@ body {
   gap: var(--gap-normal);
 }
 
-/** main body layout */
+/** main body layout and styling */
 
 .content-body {
   height: 100%;
   display: grid;
   grid: minmax(0, 1fr) / 1fr 240px;
+
+  background-color: var(--color-background);
 }
 
 .content-main_pane {
