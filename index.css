@@ -283,7 +283,25 @@ body {
 .content-side_pane {
   display: grid;
   gap: var(--gap-large);
+  align-content: start;
   padding: var(--gap-large);
+}
 
-  grid: auto 1fr 1fr / 1fr;
+.content-announcement {
+  padding-block: var(--gap-normal);
+  display: grid;
+  align-content: start;
+  gap: var(--gap-normal);
+}
+
+.content-announcement:first-child {
+  padding-top: 0;
+}
+
+.content-announcement:last-child {
+  padding-bottom: 0;
+}
+
+.content-announcement + .content-announcement {
+  border-top: 1px solid var(--color-gray);
 }
