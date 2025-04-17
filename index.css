@@ -28,7 +28,8 @@ button {
   --font-weight-normal: 500;
   --font-weight-heavy: 900;
 
-  --color-main: rgb(25, 126, 201);
+  --color-primary: rgb(25, 126, 201);
+  --color-shadow: rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -76,7 +77,7 @@ body {
   font-family: var(--font-weight-heavy);
 
   color: white;
-  background-color: var(--color-main);
+  background-color: var(--color-primary);
   border: none;
 }
 
@@ -121,7 +122,7 @@ body {
   padding: var(--gap-normal);
 
   color: white;
-  background-color: var(--color-main);
+  background-color: var(--color-primary);
 }
 
 .nav-list {
@@ -145,8 +146,8 @@ body {
   gap: var(--gap-normal);
   padding: var(--gap-normal) var(--gap-large);
 
-  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 3px 3px 0px var(--color-shadow);
+  box-shadow: 0px 3px 3px 0px var(--color-shadow);
 }
 
 .content-body {
