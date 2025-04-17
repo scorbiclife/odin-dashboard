@@ -161,7 +161,7 @@ body {
 
 .main-sidebar {
   display: grid;
-  grid: auto auto auto 1fr / 100%;
+  align-content: start;
   gap: var(--gap-large);
 
   padding: var(--gap-normal);
