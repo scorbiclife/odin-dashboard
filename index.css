@@ -22,7 +22,10 @@ h2 {
   font-size: var(--font-half-large);
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-size: var(--font-medium);
 }
 
@@ -107,6 +110,15 @@ body {
 
   color: white;
   background-color: var(--color-primary);
+  border: none;
+}
+
+.button-image_button {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  background: none;
   border: none;
 }
 
@@ -195,15 +207,6 @@ body {
   align-items: center;
 }
 
-.navigation_bar-button {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-
-  background: none;
-  border: none;
-}
-
 .search_bar {
   height: 1.5rem;
   background-color: lightgray;
@@ -240,7 +243,31 @@ body {
 
 .cards {
   display: grid;
-  grid: repeat(3, 240px) / repeat(2, 360px);
+  grid: auto / repeat(auto-fill, minmax(240px, 360px));
+  gap: var(--gap-normal);
+}
+
+.project_card {
+  aspect-ratio: 16 / 9;
+}
+
+.project_card-content {
+  display: grid;
+  height: 100%;
+
+  grid: auto minmax(0, 1fr) auto / 1fr;
+  gap: var(--gap-normal);
+}
+
+.project_card-text {
+  overflow: scroll;
+  color: var(--color-gray);
+}
+
+.project_card-actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
   gap: var(--gap-normal);
 }
 
