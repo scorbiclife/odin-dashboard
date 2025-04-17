@@ -232,19 +232,26 @@ body {
 .content-body {
   height: 100%;
   display: grid;
-  grid: minmax(0, 1fr) / 1fr 240px;
+  grid: minmax(0, 1fr) / 1fr 360px;
 
+  gap: var(--gap-large);
+  padding: var(--gap-large);
   background-color: var(--color-background);
 }
 
 .content-main_pane {
   overflow: scroll;
+
+  display: grid;
+  align-content: start;
+  gap: var(--gap-large);
+  padding: var(--gap-large);
 }
 
 .cards {
   display: grid;
   grid: auto / repeat(auto-fill, minmax(240px, 360px));
-  gap: var(--gap-normal);
+  gap: var(--gap-large);
 }
 
 .project_card {
@@ -271,9 +278,12 @@ body {
   gap: var(--gap-normal);
 }
 
+/** side pane */
+
 .content-side_pane {
   display: grid;
-  gap: var(--gap-normal);
+  gap: var(--gap-large);
+  padding: var(--gap-large);
 
   grid: auto 1fr 1fr / 1fr;
 }
