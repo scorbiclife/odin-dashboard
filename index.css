@@ -191,6 +191,7 @@ body {
   gap: var(--gap-normal);
   padding: var(--gap-normal) var(--gap-large);
 
+  z-index: 1;
   -webkit-box-shadow: 0px 3px 3px 0px var(--color-shadow);
   box-shadow: 0px 3px 3px 0px var(--color-shadow);
 }
